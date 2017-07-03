@@ -8,3 +8,9 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 Hello
+DartConfiguration.tcl
+unittest
+googletest-build/
+googletest-download/
+googletest-src/
+
