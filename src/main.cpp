@@ -1,5 +1,6 @@
-#include <iostream>
 #include <gtest/gtest.h>
+
+#include "Dollar.cpp"
 
 int main(int argc, char** argv) {
     testing::InitGoogleTest(&argc, argv);

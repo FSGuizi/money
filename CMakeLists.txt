@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.2)
 
-project(UnitTest)
+project(Dollar)
 
 include(CTest)
 
@@ -26,9 +26,10 @@ if (CMAKE_VERSION VERSION_LESS 2.8.11)
                         "${gmock_SOURCE_DIR}/include")
 endif()
 set(sources 
-	src/main.cpp
-	test/unittest.cpp
+	 src/main.cpp
+	 src/Dollar.cpp
+	 test/DollarTest.cpp
 )
-add_executable(unittest ${sources})
-target_link_libraries(unittest gtest gmock_main)
-add_test(NAME unittes_test COMMAND unittest)
+add_executable(dollar ${sources})
+target_link_libraries(dollar gtest gmock_main)
+add_test(NAME dollar_test COMMAND dollar)
