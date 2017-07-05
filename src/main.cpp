@@ -1,8 +1,8 @@
-#include <iostream>
-#include <gtest/gtest.h>
-
+#include "Dollar.h"
+ 
 int main(int argc, char** argv) {
-    testing::InitGoogleTest(&argc, argv);
-   return RUN_ALL_TESTS();
+
+	Dollar* dollar = new Dollar();	
+	return 0;
 }
 

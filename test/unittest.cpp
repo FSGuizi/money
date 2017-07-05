@@ -2,6 +2,6 @@
 
 TEST(SillyTest, unittest)
 {
-    EXPECT_EQ(true, true);
+    EXPECT_TRUE(true);
 }
 
