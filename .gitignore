@@ -16,5 +16,9 @@ googletest-src/
 test/unittest.cpp
 dollar
 *.swp
+*.swo
 *.save
 *.swn
+runDollar
+runUnitTests
+libdollar_lib.a
