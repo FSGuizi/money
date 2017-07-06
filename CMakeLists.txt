@@ -18,6 +18,3 @@ add_executable(runUnitTests ${SOUCES_TEST})
 # Link test executable against gtest & gtest_main
 target_link_libraries(runUnitTests gtest gtest_main dollar_lib)
 add_test(runUnitTests runUnitTests)
-
-
-
