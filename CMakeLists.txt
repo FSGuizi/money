@@ -8,9 +8,8 @@ include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
 #MAIN
 include_directories(include)
-set(SRC_APP src/Dollar.cpp src/main.cpp)
 add_library(dollar_lib src/Dollar.cpp)
-add_executable(runDollar ${SRC_APP})
+add_executable(runDollar src/main.cpp)
 target_link_libraries(runDollar dollar_lib)
 
 # TESTS
