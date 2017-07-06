@@ -4,7 +4,7 @@
                                                                                                               
 class Dollar                                                                                                  
 {
-	public:                                                                                                          
+public:                                                                                                          
 Dollar();                                                                                                 
 ~Dollar();                                                                                           
 };                                                                                                            

@@ -18,4 +18,5 @@ runUnitTests
 libdollar_lib.a
 *.swp
 *.swn
+*.swo
 *.save
