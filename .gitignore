@@ -16,6 +16,7 @@ googletest-src/
 nano.save
 runDollar
 runUnitTests
-src/.Dollar.h.swp
 libdollar_lib.a
 *.swp
+*.swn
+*.save
