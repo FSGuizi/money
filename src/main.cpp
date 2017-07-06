@@ -7,7 +7,7 @@ int main(int argc, char** argv) {
 	if(argc < 3){
 		std::cout << "Use: ./runDollar <amount> <multiplier>" << std::endl;
 		return (EXIT_FAILURE);
-}	
+	}	
 	Dollar dollar(atoi(argv[1]));
 	dollar.times(atoi(argv[2]));
 	std::cout << atoi(argv[1]) << " * " << atoi(argv[2]) << " = " <<  dollar.amount << std::endl;
