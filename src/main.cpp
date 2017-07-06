@@ -1,9 +1,18 @@
 #include <iostream>
+#include <stdlib.h>
+#include "Dollar.h"
 
-using namespace std;
-
-int main()
-{
-	cout << "Hello World!" << endl;
-	return 0;	
+int main(int argc, char** argv) {
+	
+	if(argc < 3){
+		std::cout << "Use: ./runDollar <amount> <multiplier>" << std::endl;
+		return EXIT_SUCCESS;
+	}	
+	Dollar *dollar = new Dollar(atoi(argv[1]));
+	dollar->times(atoi(argv[2]));
+	std::cout << atoi(argv[1]) << " * " << atoi(argv[2]) << " = " <<  dollar->amount << std::endl;
+	dollar = NULL;
+	delete dollar;
+	return 0;
 }
+

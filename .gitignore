@@ -8,3 +8,9 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 Hello
+*.swp
+*.swn
+*.swo
+runDollar
+runUnitTests
+libdollar_lib.a
