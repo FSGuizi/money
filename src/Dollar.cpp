@@ -1,12 +1,9 @@
-// Dollar.cpp
-#include <iostream>
-#include "Dollar.h"
-
-Dollar::Dollar(){
-	std::cout << "Constructor invoked." << std::endl;
+#include "Dollar.h"                                                                                                               
+Dollar::Dollar(int amount){
+	this->amount = amount;
 }
-
+void Dollar::times(int multiplier){
+	this->amount *= multiplier;                                                                             
+}
 Dollar::~Dollar(){
-	std::cout << "Destructor invoked." << std::endl;
 }
-
