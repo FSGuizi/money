@@ -13,7 +13,6 @@ unittest
 googletest-build/
 googletest-download/
 googletest-src/
-nano.save
 runDollar
 runUnitTests
 libdollar_lib.a
