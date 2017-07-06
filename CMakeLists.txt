@@ -1,3 +1,26 @@
-cmake_minimum_required (VERSION 2.6)
-project (Hello)
-add_executable(Hello src/main.cpp)
+cmake_minimum_required(VERSION 2.6)
+project(basic_test)
+
+#GTEST
+ADD_SUBDIRECTORY (googletest-1.6.0)
+enable_testing()
+include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+
+#MAIN
+include_directories(include)
+set(SRCS src/Dollar.cpp src/main.cpp)
+add_library(dollar_lib src/Dollar.cpp)
+add_executable(runDollar ${SRCS})
+target_link_libraries(runDollar dollar_lib)
+
+# Unit Tests
+# Add test cpp file
+set(SRCS_TEST test/main.cpp test/unittest.cpp)
+add_executable(runUnitTests ${SRCS_TEST})
+# Link test executable against gtest & gtest_main
+target_link_libraries(runUnitTests gtest gtest_main dollar_lib)
+add_test(runUnitTests runUnitTests)
+
+
+
+

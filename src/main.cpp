@@ -1,9 +1,9 @@
-#include <iostream>
+#include "Dollar.h"
+ 
+int main(int argc, char** argv) {
 
-using namespace std;
-
-int main()
-{
-	cout << "Hello World!" << endl;
-	return 0;	
+	Dollar *dollar = new Dollar();	
+	delete dollar;
+	return 0;
 }
+
