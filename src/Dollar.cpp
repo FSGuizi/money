@@ -1,9 +1,9 @@
-class Dollar{                                                                                                 
-                                                                                                              
-    public:                                                                                                   
-        int amount;                                                                                           
-                                                                                                                               Dollar(int amount){                                                                                   
-            this->amount= amount;                                                                             
-        }                                                                                                                      void times(int multiplier){                                                                                                amount *= multiplier;                                                                             
-        }                                                                                                     
-};                                      
+#include "Dollar.h"                                                                                                               
+Dollar::Dollar(int amount){
+	this->amount= amount;
+}
+void Dollar::times(int multiplier){
+	this->amount *= multiplier;                                                                             
+}
+Dollar::~Dollar(){
+}

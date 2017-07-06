@@ -13,10 +13,8 @@ unittest
 googletest-build/
 googletest-download/
 googletest-src/
-.CMakeLists.txt.swp
+test/unittest.cpp
 dollar
-src/.Dollar.cpp.swp
-src/.Dollar.h.swp
-src/.main.cpp.swp
-test/.DollarTest.cpp.swp
-
+*.swp
+*.save
+*.swn
