@@ -2,8 +2,6 @@
 
 #include "Dollar.h"
 
-using namespace testing;
-
 TEST(DollarTest, Multiplication){
 		
 	Dollar five(5);
@@ -13,4 +11,3 @@ TEST(DollarTest, Multiplication){
 	ASSERT_EQ(15, product.amount);
 
 }
-
