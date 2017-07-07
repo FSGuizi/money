@@ -5,11 +5,12 @@
 using namespace testing;
 
 TEST(DollarTest, Multiplication){
-	
-	Dollar* five = new Dollar(5);
-	five->times(2);
-	ASSERT_EQ(10, five->amount);
-	five = NULL;
-	delete five;
+		
+	Dollar five(5);
+	Dollar product(five.times(2));
+	ASSERT_EQ(10, product.amount);
+	product = five.times(3);
+	ASSERT_EQ(15, product.amount);
+
 }
 

@@ -5,10 +5,10 @@
 class Dollar                                                                                              
 {
 public:
-int amount;                                                                                   
-Dollar(int amount);
-void times(int multiplier);
-~Dollar();                                                                                           
+	int amount;                                                                                   
+	Dollar(int amount);
+	Dollar times(int multiplier);
+	~Dollar();                                                                                           
 };                                                                                                            
                                                                                                               
 #endif         
