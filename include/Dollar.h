@@ -5,15 +5,9 @@
 class Dollar                                                                                              
 {
 public:
-<<<<<<< HEAD
 	int amount;                                                                                   
 	Dollar(int amount);
 	Dollar times(int multiplier);
-=======
-    int amount;                                                                                   
-	Dollar(int amount);
-    void times(int multiplier);
->>>>>>> master
 	~Dollar();                                                                                           
 };                                                                                                            
                                                                                                               
