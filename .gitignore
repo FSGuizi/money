@@ -15,12 +15,12 @@ Testing
 cmake_install.cmake
 compile_commands.json
 CTestTestfile.cmake
-libdollar_lib.a
 dollar
 googletest-build/
 googletest-download/
 googletest-src/
 install_manifest.txt
+libdollar_lib.a
 runDollar
 runUnitTests
 test/unittest.cpp
