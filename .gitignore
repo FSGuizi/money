@@ -14,16 +14,8 @@ Makefile
 Testing
 cmake_install.cmake
 compile_commands.json
-<<<<<<< HEAD
 CTestTestfile.cmake
-Hello
-*.swp
-*.swn
-*.swo
-runDollar
-runUnitTests
 libdollar_lib.a
-=======
 dollar
 googletest-build/
 googletest-download/
@@ -33,4 +25,3 @@ runDollar
 runUnitTests
 test/unittest.cpp
 unittest
->>>>>>> master
