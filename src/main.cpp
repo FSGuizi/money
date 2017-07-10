@@ -9,8 +9,8 @@ int main(int argc, char** argv) {
 		return (EXIT_FAILURE);
 	}	
 	Dollar dollar(atoi(argv[1]));
-	dollar.times(atoi(argv[2]));
-	std::cout << atoi(argv[1]) << " * " << atoi(argv[2]) << " = " <<  dollar.amount << std::endl;
+	Dollar dollarM = dollar.times(atoi(argv[2]));	
+	std::cout << atoi(argv[1]) << " * " << atoi(argv[2]) << " = " <<  dollarM.amount << std::endl;
 	return 0;
 }
 

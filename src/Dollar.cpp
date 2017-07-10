@@ -2,8 +2,8 @@
 Dollar::Dollar(int amount){
 	this->amount = amount;
 }
-void Dollar::times(int multiplier){
-	this->amount *= multiplier;                                                                             
+Dollar Dollar::times(int multiplier){
+	return Dollar(amount * multiplier);                                                                             
 }
 Dollar::~Dollar(){
 }

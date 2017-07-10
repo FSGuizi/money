@@ -5,9 +5,9 @@
 class Dollar                                                                                              
 {
 public:
-    int amount;                                                                                   
+	int amount;                                                                                   
 	Dollar(int amount);
-    void times(int multiplier);
+	Dollar times(int multiplier);
 	~Dollar();                                                                                           
 };                                                                                                            
                                                                                                               
