@@ -1,11 +1,12 @@
 //  Dollar.h
+
 #ifndef DOLLAR_H                                                                                              
 #define DOLLAR_H                                                                                              
-                                                                                                              
-class Dollar                                                                                              
+
+#include "Money.h"                                                                                                              
+class Dollar : public Money                                                                                              
 {
 public:
-	int amount;                                                                                   
 	Dollar(int amount);
 	Dollar times(int multiplier);
 	~Dollar();                                                                                           

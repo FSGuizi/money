@@ -22,6 +22,7 @@ googletest-src/
 install_manifest.txt
 libdollar_lib.a
 runDollar
+runMain
 runUnitTests
 test/unittest.cpp
 unittest

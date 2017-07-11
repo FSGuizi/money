@@ -10,7 +10,7 @@ int main(int argc, char** argv) {
 	}	
 	Dollar dollar(atoi(argv[1]));
 	Dollar dollarM = dollar.times(atoi(argv[2]));	
-	std::cout << atoi(argv[1]) << " * " << atoi(argv[2]) << " = " <<  dollarM.amount << std::endl;
+//	std::cout << atoi(argv[1]) << " * " << atoi(argv[2]) << " = " <<  dollarM.amount << std::endl;
 	return 0;
 }
 
