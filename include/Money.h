@@ -8,7 +8,7 @@ class Money
 protected:
     int amount;
 public:
-    Money(int amount);
+    Money(const int &amount);
     bool operator ==(const Money &money) const;
     ~Money();
 };

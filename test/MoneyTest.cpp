@@ -12,4 +12,3 @@ TEST(MoneyTest, Equality){
     ASSERT_FALSE(Franc(5) == Franc(6));
 
 }
-

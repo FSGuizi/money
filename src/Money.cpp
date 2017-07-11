@@ -1,8 +1,6 @@
-#include <typeinfo>
-
 #include "Money.h"
 
-Money::Money(int amount){
+Money::Money(const int &amount){
 	this-> amount = amount;
 }
 bool Money::operator ==(const Money &money) const{
