@@ -7,8 +7,8 @@
 class Dollar : public Money                                                                                              
 {
 public:
-	Dollar(int amount);
-	Dollar times(int multiplier);
+	Dollar(const int &amount);
+	Dollar times(const int &multiplier);
 	~Dollar();                                                                                           
 };                                                                                                            
                                                                                                               

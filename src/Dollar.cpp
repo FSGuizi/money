@@ -1,8 +1,8 @@
 #include "Dollar.h"
 
-Dollar::Dollar(int amount): Money(amount){
+Dollar::Dollar(const int &amount): Money(amount){
 }
-Dollar Dollar::times(int multiplier){
+Dollar Dollar::times(const int &multiplier){
 	return Dollar(amount * multiplier);                                                                             
 }
 Dollar::~Dollar(){

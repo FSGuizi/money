@@ -7,8 +7,8 @@
 class Franc : public Money                                                                                             
 {
 public:
-	Franc(int amount);
-	Franc times(int multiplier);
+	Franc(const int &amount);
+	Franc times(const int &multiplier);
 	~Franc();                                                                                           
 };                                                                                                            
                                                                                                               
