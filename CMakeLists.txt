@@ -8,13 +8,13 @@ include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
 #MAIN
 include_directories(include)
-add_library(dollar_lib src/Dollar.cpp)
-add_executable(runDollar src/main.cpp)
-target_link_libraries(runDollar dollar_lib)
+add_library(money_lib src/Money.cpp src/Dollar.cpp src/Franc.cpp)
+add_executable(runMain src/main.cpp)
+target_link_libraries(runMain money_lib)
 
 # TESTS
-set(SRCS_TEST test/main.cpp test/DollarTest.cpp)
-add_executable(runUnitTests ${SRCS_TEST})
+set(SRCS_TEST test/main.cpp test/MoneyTest.cpp)
+add_executable(runUnitTests ${SRCS_TEST} )
 # Link test executable against gtest & gtest_main
-target_link_libraries(runUnitTests gtest gtest_main dollar_lib)
+target_link_libraries(runUnitTests gtest gtest_main money_lib)
 add_test(runUnitTests runUnitTests)
