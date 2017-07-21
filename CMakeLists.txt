@@ -8,7 +8,7 @@ include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
 #MAIN
 include_directories(include)
-add_library(money_lib src/Money.cpp src/Dollar.cpp src/Franc.cpp)
+add_library(money_lib src/Money.cpp src/Dollar.cpp src/Franc.cpp src/Bank.cpp src/Expression.cpp)
 add_executable(runMain src/main.cpp)
 target_link_libraries(runMain money_lib)
 

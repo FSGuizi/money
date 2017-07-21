@@ -1,9 +1,17 @@
 #include "Dollar.h"
 
-Dollar::Dollar(const int &amount): Money(amount){
+Dollar::Dollar(const int &amount, const string &Currency)
+	: Money(amount, Currency)
+{
 }
-Dollar Dollar::times(const int &multiplier){
-	return Dollar(amount * multiplier);                                                                             
+
+/*string Dollar::currency(){
+	return Currency;
 }
+
+Money* Dollar::times(const int& multiplier){
+	return new Money(amount * multiplier, Currency);                                                                         
+}*/
+
 Dollar::~Dollar(){
 }
