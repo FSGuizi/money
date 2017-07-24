@@ -8,6 +8,7 @@ class Money;
 class Expression{
 public:
 	virtual Expression* operator+(const Money& addend);
+
 	virtual ~Expression();	
 };
 

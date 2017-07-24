@@ -8,13 +8,9 @@ class Franc : public Money
 
 {
 public:
-	Franc(const int &amount, const string &Currency);
-	
-//	virtual string currency();
-	
-//	virtual Money* times(const int &multiplier);
+	Franc(const int &amount, const std::string& Currency);
 	
 	~Franc();                                                                                           
 };                                                                                                            
                                                                                                               
-#endif
+#endif // FRANC_H

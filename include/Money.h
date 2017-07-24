@@ -6,18 +6,14 @@
 #include <string>
 #include "Expression.h"
 
-using namespace std;
-
 class Money : public Expression{
 protected:
 	int amount;
-	string Currency;
+	std::string Currency;
 public:
-	Money(const int &amount, const string &Currency);
+	Money(const int &amount, const std::string& Currency);
 
-	virtual string currency();
-
-//	string toString();
+	virtual std::string currency();
 
 	virtual Money* times(const int& multiplier);
 
@@ -27,8 +23,6 @@ public:
 
 	bool operator ==(const Money& money) const;
 	
-//	Money* operator+(const Money& addend) const;
-
  	Expression* operator+(const Money& addend);	
 	
 	virtual ~Money();

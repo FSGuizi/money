@@ -6,9 +6,11 @@
 #include "Money.h"
 
 class Bank {
-	public:
+public:
 	Bank();
-	Money* reduce(const Expression& source,const string& to);
+
+	Money* reduce(const Expression& source,const std::string& to);
+
 	~Bank();
 };
 
