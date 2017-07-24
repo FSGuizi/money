@@ -5,7 +5,6 @@
     
 #include "Money.h"                                                                                                          
 class Franc : public Money                                                                                             
-
 {
 public:
 	Franc(const int &amount, const std::string& Currency);
