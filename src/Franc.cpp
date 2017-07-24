@@ -1,8 +1,9 @@
 #include "Franc.h"                                                                                                               
-Franc::Franc(const int &amount) : Money(amount){
+Franc::Franc(const int &amount, const std::string& Currency)
+	: Money(amount, Currency)
+{
 }
-Franc Franc::times(const int &multiplier){
-	return Franc(amount * multiplier);                                                                             
-}
-Franc::~Franc(){
+
+Franc::~Franc()
+{
 }

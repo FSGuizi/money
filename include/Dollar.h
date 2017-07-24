@@ -7,9 +7,9 @@
 class Dollar : public Money                                                                                              
 {
 public:
-	Dollar(const int &amount);
-	Dollar times(const int &multiplier);
+	Dollar(const int &amount, const std::string& Current);
+
 	~Dollar();                                                                                           
 };                                                                                                            
                                                                                                               
-#endif         
+#endif // DOLLAR_H

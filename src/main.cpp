@@ -8,8 +8,6 @@ int main(int argc, char** argv) {
 		std::cout << "Use: ./runDollar <amount> <multiplier>" << std::endl;
 		return (EXIT_FAILURE);
 	}	
-	Dollar dollar(atoi(argv[1]));
-	Dollar dollarM = dollar.times(atoi(argv[2]));	
 	return 0;
 }
 
